@@ -1,4 +1,4 @@
-FROM arm64v8/ubuntu
+FROM arm64v8/ubuntu:latest
 
 RUN apt-get update
 RUN apt-get install -y curl build-essential libgmp-dev git wget
