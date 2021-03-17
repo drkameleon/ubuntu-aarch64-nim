@@ -1,5 +1,7 @@
 FROM arm64v8/ubuntu:latest
 
+ENV DOCKER_TARGET_PLATFORM=linux/arm/v8
+
 RUN apt-get update
 RUN apt-get install -y curl build-essential libgmp-dev git wget
 RUN wget https://nim-lang.org/download/nim-1.4.4.tar.xz
